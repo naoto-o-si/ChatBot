@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: 20.15.0
           cache: 'npm'
+          cache-dependency-path: ./chatbot/yarn.lock
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
